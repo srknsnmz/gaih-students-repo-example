@@ -1,5 +1,14 @@
-#Explain your work
+num = int(input("Enter a number: "))
 
-#Question 1
-for x in range(a):
-	print(a)
+while num > 100 or num < 0:
+      print("Please enter a number between 0 and 100")
+      num = int(input("Enter a number: "))
+if num > 1:
+   for i in range(2,num):
+       if (num % i) == 0:
+           print(num,"is not a prime number")
+           break                 
+   else:
+       print(num,"is a prime number")
+else:
+   print(num,"is not a prime number")
